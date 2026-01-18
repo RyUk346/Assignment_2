@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Assignment 2</title>
+  </head>
+  <body class="text-white bg-[#1A0B2E]">
+    <header
+      class="flex items-center justify-between py-4 px-5 min-[993px]:px-[200px]"
+    >
+      <h1 class="inter text-3xl font-bold">
+        Tech
+        <span
+          class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+        >
+          Wave
+        </span>
+      </h1>
+      <div class="">
+        <img src="assets/hamburger-menu.png" alt="" class="sm:hidden" />
+        <ul class="hidden sm:flex gap-8">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Host</a></li>
+        </ul>
+      </div>
+      <button
+        class="hidden sm:flex items-center justify-center gap-1 w-[135px] h-11 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl"
+      >
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </header>
+  </body>
+</html>
