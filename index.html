@@ -23,7 +23,7 @@
     <title>Assignment 2</title>
   </head>
   <body class="text-white bg-[#1A0B2E]">
-    <header
+    <nav
       class="flex items-center justify-between py-4 px-5 min-[993px]:px-[200px]"
     >
       <h1 class="inter text-3xl font-bold">
@@ -47,6 +47,42 @@
       >
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
+    </nav>
+    <header
+      class="w-full min-h-[400px] bg-[url(assets/hero-bg.png)] bg-cover bg-no-repeat bg-center flex items-center justify-center"
+    >
+      <div
+        class="py-10 px-5 lg:py-[101px] lg:px-[505px] flex flex-col justify-center items-center"
+      >
+        <div
+          class="w-[200px] lg:w-[350px] h-[200px] lg:h-[350px] bg-[url(./assets/hero-circle.png)] bg-cover bg-center flex justify-center items-center mb-6 lg:mb-10"
+        >
+          <img class="w-[46px]" src="assets/microphone.png" alt="Microphone" />
+        </div>
+        <div class="mb-2 text-center lg:mb-6">
+          <h1 class="text-[40px] md:text-[60px] font-extrabold mb-0.5 lg:mb-2">
+            TechWave
+          </h1>
+          <p class="">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+        </div>
+        <div class="flex justify-around items-center gap-2 font-semibold">
+          <button
+            class="w-[201px] px-5 py-3 flex justify-center items-center gap-2 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl"
+          >
+            <img src="assets/spotify.png" alt="" />
+            Listen On Spotify
+          </button>
+          <button
+            class="w-[147px] px-5 py-3 flex justify-center items-center gap-2 rounded-4xl text-[#00FF88] border-[#00FF88] border"
+          >
+            <img src="assets/message.png" alt="" />
+            Subscribe
+          </button>
+        </div>
+      </div>
     </header>
   </body>
 </html>
