@@ -24,16 +24,18 @@
   </head>
   <body class="text-white bg-[#1A0B2E]">
     <nav
-      class="flex items-center justify-between py-4 px-5 min-[993px]:px-[200px]"
+      class="flex items-center justify-between py-4 px-5 min-[993px]:px-[200px] border-[#412567] border-b-[.5px] sticky top-0 z-100 bg-[#1A0B2E]"
     >
-      <h1 class="inter text-3xl font-bold">
-        Tech
-        <span
-          class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
-        >
-          Wave
-        </span>
-      </h1>
+      <a href="/"
+        ><h1 class="inter text-3xl font-bold cursor-pointer">
+          Tech
+          <span
+            class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+          >
+            Wave
+          </span>
+        </h1></a
+      >
       <div class="">
         <img src="assets/hamburger-menu.png" alt="" class="sm:hidden" />
         <ul class="hidden sm:flex gap-8">
@@ -43,7 +45,7 @@
         </ul>
       </div>
       <button
-        class="hidden sm:flex items-center justify-center gap-1 w-[135px] h-11 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl"
+        class="hidden sm:flex items-center justify-center gap-1 w-[135px] h-11 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl cursor-pointer"
       >
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -55,9 +57,18 @@
         class="py-10 px-5 lg:py-[101px] lg:px-[505px] flex flex-col justify-center items-center"
       >
         <div
-          class="w-[200px] lg:w-[350px] h-[200px] lg:h-[350px] bg-[url(./assets/hero-circle.png)] bg-cover bg-center flex justify-center items-center mb-6 lg:mb-10"
+          class="w-[200px] lg:w-[350px] h-[200px] lg:h-[350px] bg-[url(./assets/hero-circle.png)] bg-cover bg-center flex justify-center items-center mb-6 lg:mb-10 relative"
         >
-          <img class="w-[46px]" src="assets/microphone.png" alt="Microphone" />
+          <img
+            class="w-[46px] lg:w-[116px]"
+            src="assets/microphone.png"
+            alt="Microphone"
+          />
+          <div
+            class="absolute top-1 right-1 md:right-8 py-2 px-4 w-[70px] md:w-[75px] font-semibold md:text-[18px] text-[#1A0B2E] bg-[#00FF88] rounded-4xl"
+          >
+            NEW
+          </div>
         </div>
         <div class="mb-2 text-center lg:mb-6">
           <h1 class="text-[40px] md:text-[60px] font-extrabold mb-0.5 lg:mb-2">
@@ -70,13 +81,13 @@
         </div>
         <div class="flex justify-around items-center gap-2 font-semibold">
           <button
-            class="w-[201px] px-5 py-3 flex justify-center items-center gap-2 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl"
+            class="w-[201px] px-5 py-3 flex justify-center items-center gap-2 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl cursor-pointer"
           >
             <img src="assets/spotify.png" alt="" />
             Listen On Spotify
           </button>
           <button
-            class="w-[147px] px-5 py-3 flex justify-center items-center gap-2 rounded-4xl text-[#00FF88] border-[#00FF88] border"
+            class="w-[147px] px-5 py-3 flex justify-center items-center gap-2 rounded-4xl text-[#00FF88] border-[#00FF88] border cursor-pointer"
           >
             <img src="assets/message.png" alt="" />
             Subscribe
@@ -84,5 +95,44 @@
         </div>
       </div>
     </header>
+    <section class="px-5 py-10 lg:px-[200px] lg:py-12.5">
+      <div class="text-center space-y-4 py-10 lg:py-20">
+        <h1 class="text-[32px] lg:text-5xl font-bold">About The Podcast</h1>
+        <p class="">
+          TechWave is your go-to podcast for staying ahead in the fast-paced
+          world of technology. We break down complex topics into digestible
+          insights, explore productivity strategies that actually work, and
+          share stories of personal growth from industry leaders.
+          <br /><br />Join thousands of young professionals and tech enthusiasts
+          who start their day with TechWave.
+        </p>
+      </div>
+      <div
+        class="flex flex-wrap justify-center items-center gap-10 lg:gap-20 py-10 lg:py-20 border-t-[.5px] border-[#412567]"
+      >
+        <div class="text-center space-y-4">
+          <h1 class="text-[40px] lg:text-5xl text-[#00FF88] font-black">
+            150K+
+          </h1>
+          <p class="leading-5">MONTHLY LISTENERS</p>
+        </div>
+        <div class="text-center space-y-4">
+          <h1 class="text-[40px] lg:text-5xl text-[#00FF88] font-black">
+            200+
+          </h1>
+          <p class="leading-5 uppercase">Episodes Published</p>
+        </div>
+        <div class="text-center space-y-4">
+          <h1 class="text-[40px] lg:text-5xl text-[#00FF88] font-black">
+            4.9★
+          </h1>
+          <p class="leading-5 uppercase">Average Rating</p>
+        </div>
+        <div class="text-center space-y-4">
+          <h1 class="text-[40px] lg:text-5xl text-[#00FF88] font-black">50+</h1>
+          <p class="leading-5 uppercase">Industry Experts</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
