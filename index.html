@@ -57,15 +57,20 @@
         class="py-10 px-5 lg:py-[101px] lg:px-[505px] flex flex-col justify-center items-center"
       >
         <div
-          class="w-[200px] lg:w-[350px] h-[200px] lg:h-[350px] bg-[url(./assets/hero-circle.png)] bg-cover bg-center flex justify-center items-center mb-6 lg:mb-10 relative"
+          class="w-[200px] lg:w-[350px] h-[200px] lg:h-[350px] flex justify-center items-center mb-6 lg:mb-10 relative"
         >
+          <div
+            class="absolute inset-0 bg-[url(./assets/hero-circle.png)] bg-cover bg-center animate-[spin_3s_linear_infinite]"
+          ></div>
+
           <img
-            class="w-[46px] lg:w-[116px]"
+            class="w-[46px] lg:w-[116px] relative z-10"
             src="assets/microphone.png"
             alt="Microphone"
           />
+
           <div
-            class="absolute top-1 right-1 md:right-8 py-2 px-4 w-[70px] md:w-[75px] font-semibold md:text-[18px] text-[#1A0B2E] bg-[#00FF88] rounded-4xl"
+            class="absolute top-1 right-1 md:right-8 py-2 px-4 w-[70px] md:w-[75px] font-semibold md:text-[18px] text-[#1A0B2E] bg-[#00FF88] rounded-full z-20"
           >
             NEW
           </div>
@@ -81,13 +86,13 @@
         </div>
         <div class="flex justify-around items-center gap-2 font-semibold">
           <button
-            class="w-[201px] px-5 py-3 flex justify-center items-center gap-2 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl cursor-pointer"
+            class="w-[201px] px-5 py-3 flex justify-center items-center gap-2 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-4xl cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <img src="assets/spotify.png" alt="" />
             Listen On Spotify
           </button>
           <button
-            class="w-[147px] px-5 py-3 flex justify-center items-center gap-2 rounded-4xl text-[#00FF88] border-[#00FF88] border cursor-pointer"
+            class="w-[147px] px-5 py-3 flex justify-center items-center gap-2 rounded-4xl text-[#00FF88] border-[#00FF88] border cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <img src="assets/message.png" alt="" />
             Subscribe
@@ -213,7 +218,7 @@
           ></iframe>
 
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none animate-pulse"
           >
             <div
               class="w-16 h-16 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full flex items-center justify-center cursor-pointer pl-1 shadow-xl"
@@ -242,7 +247,7 @@
       >
         <div class="relative w-full aspect-video">
           <iframe
-            src="https://www.youtube.com/embed/7ARBJQn6QkM?si=UgyKEdtGNIHrvVtJ"
+            src="https://www.youtube.com/embed/PLBYYdg0sfs?si=AxAav4SaLaPSk598"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -252,7 +257,7 @@
           ></iframe>
 
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none animate-pulse"
           >
             <div
               class="w-16 h-16 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full flex items-center justify-center cursor-pointer pl-1 shadow-xl"
@@ -281,7 +286,7 @@
       >
         <div class="relative w-full aspect-video">
           <iframe
-            src="https://www.youtube.com/embed/7ARBJQn6QkM?si=UgyKEdtGNIHrvVtJ"
+            src="https://www.youtube.com/embed/S-gIFz-uYNw?si=pYI_Fp2w1n4ClgqN"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -291,7 +296,7 @@
           ></iframe>
 
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none animate-pulse"
           >
             <div
               class="w-16 h-16 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full flex items-center justify-center cursor-pointer pl-1 shadow-xl"
@@ -316,7 +321,7 @@
         </div>
       </div>
     </section>
-    <section class="py-5 px-5 lg:px-[200px] text-center md:text-start">
+    <section class="py-5 px-5 lg:px-[200px] lg:mb-30 text-center md:text-start">
       <h1 class="text-center text-[32px] lg:text-5xl font-bold mb-6 lg:mb-10">
         Meet The Host
       </h1>
@@ -358,16 +363,38 @@
         </div>
       </div>
     </section>
-    <footer>
-        <a href="/"
-        ><h1 class="inter text-3xl font-bold cursor-pointer">
+    <footer
+      class="w-full min-h-[248px] bg-[url(assets/footer-bg.png)] bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center py-10 px-5 lg:p-30 space-y-6 lg:space-y-8"
+    >
+      <a href="/"
+        ><h1 class="inter text-5xl font-black cursor-pointer">
           Tech
           <span
-            class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+            class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
           >
             Wave
           </span>
         </h1></a
+      >
+      <div class="flex flex-wrap items-center justify-center gap-4 lg:gap-10">
+        <div class="flex gap-2 items-center">
+          <img src="assets/spotify.png" alt="" />
+          <p>Spotify</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <img src="assets/apple-podcast.png" alt="" />
+          <p>Apple Podcasts</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <img src="assets/youtube-podcast.png" alt="" />
+          <p>YouTube</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <img src="assets/twitter.png" alt="" />
+          <p>Twitter</p>
+        </div>
+      </div>
+      <h1>© 2026 TechWave Podcast. All rights reserved.</h1>
     </footer>
   </body>
 </html>
